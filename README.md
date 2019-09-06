@@ -5,7 +5,7 @@ Useful code snippets and How To's
 https://jasonmccreary.me/articles/install-apache-php-mysql-mac-os-x-mojave/
 https://jasonmccreary.me/articles/configure-apache-virtualhost-mac-os-x/
 
-# Cloning a private repo (SSH)
+# Cloning a repo with (SSH)
 GIT ADD SSH (Allows your local environment to clone or push commits to remote)
 1. cd /Users/mbeyah/.ssh  (Replace mbeyah with your user)
 2. ssh-keygen -t rsa -b 4096  (Generating public/private rsa key pair. Will prompt for identity, give a name to ID your machine. air was given in this case. Creates private key 'air' and public key 'air.pub' inside .ssh folder)
@@ -20,3 +20,5 @@ CD to root of local github repo and look for .git folder (Tip: ls -a to see hidd
 3. nano config
 4. Copy ssh link of repo from github
 5. Paste the link in url element
+`[remote "origin"]
+        url = git@github.com:Organization/xyz.git`
