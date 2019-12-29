@@ -43,3 +43,16 @@ CD to root of local github repo and look for .git folder (Tip: ls -a to see hidd
 ```$ git pull origin master --allow-unrelated-histories```  
   
 7) If you have some merge conflicts resolve them and commit your changes. 
+
+
+# Kill a process on a port
+
+To list any process listening to the port 8080:
+
+lsof -i:8080
+To kill any process listening to the port 8080:
+
+kill $(lsof -t -i:8080)
+or more violently:
+
+kill -9 $(lsof -t -i:8080)
