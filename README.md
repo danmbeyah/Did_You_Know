@@ -58,3 +58,13 @@ To kill any process listening to the port 8080:
 Or
 
 ```kill -9 $(lsof -t -i:8080)```
+
+# Create package.json from node_modules folder
+
+npm init
+
+to create the package.json file and then you use
+
+ls node_modules/ | xargs npm install --save
+
+to fill in the modules you have in the node_modules folder.
