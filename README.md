@@ -68,3 +68,7 @@ to create the package.json file and then you use
 ls node_modules/ | xargs npm install --save
 
 to fill in the modules you have in the node_modules folder.
+
+# Add existing project to GitHub
+https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line
+Step 9: git push --force {Repository Name}
