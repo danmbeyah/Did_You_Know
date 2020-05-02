@@ -71,4 +71,9 @@ to fill in the modules you have in the node_modules folder.
 
 # Add existing project to GitHub
 https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line
+If step 9 doesnt push use:
 Step 9: git push --force {Repository Name}
+# Applying .gitignore to committed files
+1. Edit .gitignore to match the file you want to ignore
+1. git rm --cached /path/to/file
+
